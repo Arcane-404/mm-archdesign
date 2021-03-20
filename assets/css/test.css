@@ -1,0 +1,13 @@
+html,body,#root { border: 1px solid darkslategray; }
+
+/* header { border: 3px solid slategray; } */
+/* header * { border: 1px solid dimgray; } */
+/* footer { border: 3px solid slategray; } */
+/* footer * { border: 1px solid dimgray; } */
+/* .page-layout { border: 3px solid slategray; } */
+/* header .page-layout { border: 3px solid slategray; } */
+/* main .page-layout { border: 3px solid slategray; } */
+/* footer .page-layout { border: 3px solid slategray; } */
+
+nav { border: 3px solid slategray; }
+nav * { border: 1px solid dimgray; }
