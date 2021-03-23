@@ -9,5 +9,6 @@ html,body,#root { border: 1px solid darkslategray; }
 /* main .page-layout { border: 3px solid slategray; } */
 /* footer .page-layout { border: 3px solid slategray; } */
 
-nav { border: 3px solid slategray; }
-nav * { border: 1px solid dimgray; }
+.navbar-btn { border: 3px solid slategray; }
+.navbar { border: 3px solid slategray; }
+/* .navbar * { border: 1px solid gray; } */

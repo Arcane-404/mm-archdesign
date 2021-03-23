@@ -1,9 +1,130 @@
+:root {
+/* mobile */
+  --h1-mobile: 300 28pt/1.25 'Proxima Nova', sans-serif;
+  --h2-mobile: 400 24pt/1.25 'Proxima Nova', sans-serif;
+  --h3-mobile: 400 18pt/1.25 'Proxima Nova', sans-serif;
+  --h4-mobile: 300 18pt/1.25 'Proxima Nova', sans-serif;
+  --body: 400 14pt/1.25 'Proxima Nova', sans-serif;
+  --micro-copy: 400 12pt/1.25 'Proxima Nova', sans-serif;
+/* desktop */
+  --h1-desktop: 300 36pt/1.25 'Proxima Nova', sans-serif;
+  --h2-desktop: 400 36pt/1.5 'Proxima Nova', sans-serif;
+  --h3-desktop: 500 18pt/1.25 'Proxima Nova', sans-serif; /* 2% spacing */
+  --body-1: 300 22pt/1.5 'Proxima Nova', sans-serif; /* 2.5% spacing */
+  --body-2: 300 14pt/1.25 'Proxima Nova', sans-serif; /* 2% spacing */
+/* color scheme */
+  --light-gray-text: #FAFAFA;
+  --dark-gray-text: #313131;
+  --card-text: #637579;
+  --navbar-mobile-text: #6F7374;
+  --navbar-desktop-text: rgba(0, 0, 0, 0.6);
+  --hover-state: rgba(241, 91, 77, 0.5);
+  --active-state: #F15B4D;
+  --button-default:  rgba(0, 0, 0, 0.7);
+  --button-active: #313131;
+  --shadow-default: 1px 3px 8px rgba(0, 0, 0, 0.15);
+  --shadow-hover: 8px 8px 8px rgba(0, 0, 0, 0.15);
+  --shadow-active: 4px 4px 6px rgba(65, 65, 65, 0.5);
+}
+
+* { box-sizing: inherit; }
+
+html, body {
+  box-sizing: border-box;
+  /* width: 100%; */
+  height: 100%;
+  min-height: 100%;
+}
+
+nav ul { 
+  list-style: none; 
+  padding-left: 0;
+}
+a { 
+  text-decoration: none; 
+  color: inherit;
+}
+
 /* =================
 ** Typography
 ================= */
-body { font: 1rem/1.5 sans-serif; }
+
+body { 
+  background: #333;
+  font: 400 1rem/1.25 sans-serif; 
+  letter-spacing: 0.01em;
+}
+
+.nav-item,
+.contact-item 
+{ font: var(--body-2); }
 
 /* =================
 ** Navbar
 ================= */
 
+.nav-menu {
+  cursor: pointer;
+  width: 20px;
+  margin-left: auto;
+}
+
+/* nav-toggle */
+
+.navbar-btn {
+  --v-pad: 0.35em;
+  --radius: 0.5em;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--navbar-mobile-text);
+  width: 70px;
+  padding: var(--v-pad) 1em var(--v-pad) 0; 
+  display: flex;
+  position: fixed;
+  top: 100px;
+  left: -70px;
+  transition: left 0.5s ease-out;
+}
+
+/* navbar */
+
+.navbar {
+  z-index: 1;
+  background: var(--navbar-desktop-text);
+  color: var(--light-gray-text);
+  width: 187px;
+  height: 100%;
+  padding: 3em 1.25em 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  /* left: -35%; */
+  left: -186px;
+  transition: left 0.5s ease-out;
+}
+.nav-logo {
+  width: 65%;
+}
+.nav-item:not(:last-child),
+.contact-item:not(:last-child) 
+{ margin-bottom: 1em; }
+.nav-item a {
+  border-bottom: 1px solid transparent;
+}
+.nav-item a:hover {
+  border-bottom-color: var(--active-state);
+}
+
+/*  */
+
+.navbar-active {
+  left: 0;
+}
+.nav-active a {
+  border-bottom-color: var(--active-state);
+}
+
+/* =================
+** Portfolio
+================= */

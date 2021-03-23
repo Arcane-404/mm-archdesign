@@ -7,34 +7,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Architect Portfolio</title>
 <!--  -->
-<link 
-rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
-integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
-crossorigin="anonymous" 
-/>
-<!--  -->
 <link rel="stylesheet" href="./assets/css/test.css" />
 <link rel="stylesheet" href="./assets/css/normalize.css" />
 <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-<nav>
-  <h1 class="logo">
-    <span class="upper">MM</span>
-    <span>Arch Designs</span>
-  </h1>
+<nav class="navbar">
+  <img src="./assets/images/nav-menu-close.svg" alt="&#12296;" class="nav-menu" />
+  <img src="./assets/images/logo.png" alt="logo-picture" class="nav-logo" />
   <ul class="nav-list">
-    <li>Portfolio</li>
-    <li>About</li>
+    <li class="nav-item nav-active"><a href="#">Portfolio</a></li>
+    <li class="nav-item"><a href="#">About</a></li>
+    <li class="nav-item"><a href="#">Press</a></li>
   </ul>
-  <div class="contacts-list">
-    <a href="#">Phone <i class="fas fa-phone"></i></a>
-    <a href="#">Email <i class="fas fa-envelope"></i></a>
-  </div>
+  <ul class="contact-list">
+    <li class="contact-item"><a href="#" class="phone">___.___.____</a></li>
+    <li class="contact-item"><a href="#" class="email">Email</a></li>
+  </ul>
 </nav>
-<!-- <button class="menu-btn"><i class="fas fa-angle-right"></i></button> -->
+<div class="navbar-btn navbar-active">
+  <img src="./assets/images/nav-menu-open.svg" alt="&#12296;" class="nav-menu" />
+</div>
 <!--  -->
 <script src="./assets/js/navbar.js"></script>
 </body>
