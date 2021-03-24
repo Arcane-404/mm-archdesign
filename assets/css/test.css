@@ -1,4 +1,4 @@
-html,body,#root { border: 1px solid darkslategray; }
+/* html,body,#root { border: 1px solid darkslategray; } */
 
 /* header { border: 3px solid slategray; } */
 /* header * { border: 1px solid dimgray; } */
@@ -9,6 +9,14 @@ html,body,#root { border: 1px solid darkslategray; }
 /* main .page-layout { border: 3px solid slategray; } */
 /* footer .page-layout { border: 3px solid slategray; } */
 
-.navbar-btn { border: 3px solid slategray; }
-.navbar { border: 3px solid slategray; }
+/* .navbar-btn { border: 3px solid slategray; } */
+/* .navbar { border: 3px solid slategray; } */
 /* .navbar * { border: 1px solid gray; } */
+/*  */
+/* .project { border: 1px solid gray; } */
+/* .project * { border: 1px solid lightcoral; } */
+/*  */
+/* .protfolio-projects { border: 3px solid slategray; } */
+/* .protfolio-projects > * { border: 1px solid gray; } */
+/* .card { border: 1px solid gray; } */
+/* .card * { border: 1px solid lightcoral; } */
