@@ -1,7 +1,3 @@
-const $ = (elm) => document.querySelector(elm);
-const $$ = (elm) => document.querySelectorAll(elm);
-const print = console.log;
-
 const $navbar = $('.navbar');
 const $navbarBtn = $('.navbar-btn');
 const $navMenus = $$('.nav-menu');

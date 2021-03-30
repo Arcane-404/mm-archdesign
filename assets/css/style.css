@@ -274,8 +274,7 @@ body {
   --size: 100%;
   width: var(--size);
   height: var(--size);
-  display: grid;
-  place-content: center;
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -295,6 +294,8 @@ body {
 }
 .card:active .card-overlay 
 { background: var(--state-active); }
+.card-overlay p 
+{ margin: auto; }
 .card-image {
   width: 100%;
   flex: 1;
@@ -357,6 +358,8 @@ body {
 /* .card-secondary .card-image 
 { height: 150px; } */
 
+/* --- Project Page --- */
+
 
 /* =================
 ** About Me
@@ -395,6 +398,26 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/*  --- Press Page --- */
+
+@media (min-width: 800px) {
+  .press-content {
+    display: flex;
+    flex-flow: wrap;
+  }
+  .press-image {
+    border-radius: var(--radius);
+    width: 560px;
+    /* height: 647px; */
+    height: 615px;
+    object-fit: cover;
+  }
+  .press-copy {
+    max-width: 461px;
+  }
+}
+
 
 /* =================
 ** Media Query - Desktop

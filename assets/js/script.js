@@ -1,3 +1,13 @@
+// $('.carousel-slide').slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   // dots: true,
+//   infinite: true,
+//   speed: 300
+// })
+
+/*  */
+
 const $imgTags = $$('[name="home"],[name="portfolio"],[name="press"]');
 // print($imgTags)
 

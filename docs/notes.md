@@ -4,6 +4,10 @@
 - show tooltip
 - text copy
 
+## Grid-Template
+- #-of-rows / #-of-columns
+- ↑/↓       &          ←/→
+
 ## Portfolio Slides
 - |
 

@@ -1,0 +1,29 @@
+.project-content {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  /* max-width: 500px; */
+  /* height: 100%; */
+  /* display: flex; */
+  /* overflow: auto; */
+  /* overflow: auto; */
+  /* display: none; */
+}
+
+.c-item:nth-child(1) { background: red; }
+.c-item:nth-child(1) { background: blue; }
+.c-item:nth-child(1) { background: green; }
+
+.item {
+  /* overflow: hidden; */
+  width: 350px;
+  height: 250px;
+}
+
+.carousel-slide img {
+  width: 350px;
+  height: 100%;
+  object-fit: cover;
+}
