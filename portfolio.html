@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="./assets/css/test.css" />
 <link rel="stylesheet" href="./assets/css/normalize.css" />
 <link rel="stylesheet" href="./assets/css/style.css" />
+<link rel="stylesheet" href="./assets/css/grids.css" />
 </head>
 
 <body>
@@ -21,12 +22,12 @@
   </a>
   <ul class="nav-list">
     <li class="nav-item nav-active"><a href="./portfolio.html">Portfolio</a></li>
-    <li class="nav-item"><a href="./about-me.html">About</a></li>
+    <li class="nav-item"><a href="./about.html">About</a></li>
     <li class="nav-item"><a href="./press.html">Press</a></li>
   </ul>
   <ul class="contact-list">
-    <li class="contact-item"><a href="#" class="phone">___.___.____</a></li>
-    <li class="contact-item"><a href="#" class="email">Email Me</a></li>
+    <li class="contact-item"><a href="#" id="phone" data-value="415-271-7595">415.271.7595</a></li>
+    <li class="contact-item"><a href="#" id="email" data-value="maryam@monsef-design.com">Email Me</a></li>
   </ul>
 </nav>
 <div class="navbar-btn navbar-active">
@@ -44,11 +45,14 @@
       <h2 class="page-title">Portfolio</h2>
     </div>
 
-    <div class="main-content portfolio-projects">
+    <div class="grid-content portfolio-projects">
       <!-- project 1 -->
-      <div class="card card-primary EXAMPLE">
+      <div class="card card-primary">
         <div class="card-image">
           <img src="" alt="project-pic-1" name="portfolio" />
+        </div>
+        <div class="card-title">
+          <p>mid century modern in downtown chicago</p>
         </div>
         <div class="card-overlay">
           <p>mid century modern in downtown chicago</p>
@@ -59,6 +63,9 @@
         <div class="card-image">
           <img src="" alt="project-pic-2" name="portfolio" />
         </div>
+        <div class="card-title">
+          <p>modern in chicago</p>
+        </div>
         <div class="card-overlay">
           <p>modern in chicago</p>
         </div>
@@ -68,6 +75,9 @@
         <div class="card-image">
           <img src="" alt="project-pic-3" name="portfolio" />
         </div>
+        <div class="card-title">
+          <p>modern in california</p>
+        </div>
         <div class="card-overlay">
           <p>modern in california</p>
         </div>
@@ -76,7 +86,6 @@
   </div>
 </main>
 <!--  -->
-<script src="./assets/js/utils.js"></script>
 <script src="./assets/js/script.js"></script>
 <script src="./assets/js/navbar.js"></script>
 </body>

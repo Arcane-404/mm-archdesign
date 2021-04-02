@@ -1,12 +1,6 @@
-// $('.carousel-slide').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   // dots: true,
-//   infinite: true,
-//   speed: 300
-// })
-
-/*  */
+const $ = (elm) => document.querySelector(elm);
+const $$ = (elm) => document.querySelectorAll(elm);
+const print = console.log;
 
 const $imgTags = $$('[name="home"],[name="portfolio"],[name="press"]');
 // print($imgTags)
@@ -18,10 +12,7 @@ const LINK = 'https://source.unsplash.com/random/';
 let SIZE;
 let QUERY;
 
-if (PATH === '/' || PATH === '/index.html') {
-  SIZE = '1920x1080'; QUERY = '?architecture,skyscraper';
-}
-if (PATH === '/portfolio.html' || PATH === '/portfolio-1.html') {
+if (PATH === '/portfolio.html' || PATH === '/--portfolio.html') {
   SIZE = '800x600'; QUERY = '?building,city';
 }
 if (PATH === '/press.html' || PATH === '/press-1.html') {

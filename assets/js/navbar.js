@@ -1,7 +1,7 @@
-const $navbar = $('.navbar');
-const $navbarBtn = $('.navbar-btn');
-const $navMenus = $$('.nav-menu');
-const $contacts = $$('.contact-item a');
+const $navbar = document.querySelector('.navbar');
+const $navbarBtn = document.querySelector('.navbar-btn');
+const $navMenus = document.querySelectorAll('.nav-menu');
+const $contacts = document.querySelectorAll('.contact-item a');
 
 /* Navbar Toggle - Mobile */
 
@@ -20,7 +20,7 @@ function handleNavEvents (e) {
   const isCloseCaret = e.target === $navbar.querySelector('.navbar-caret');
   const isOpenCaret = e.target === $navbarBtn.querySelector('.navbar-btn-caret');
   const isClickedOutside = e.target !== window && !$navbar.contains(e.target);
-  const [ESCAPE, DESKTOP] = [27, 800];
+  const [ESCAPE, DESKTOP] = [27, 900];
 
   if (e.type === 'mouseup' && isOpenCaret) return toggleNavMenu();
   if (!isActive) return;
@@ -35,11 +35,12 @@ function handleNavEvents (e) {
 $contacts.forEach(contact => contact.addEventListener('click', handleCopyEvent))
 
 function handleCopyEvent (e) {
+  e.preventDefault()
   const [contact,original,value] = [
     e.target, e.target.textContent, e.target.dataset.value
   ];
 
-  const isMobile = window.matchMedia('(max-width: 800px)').matches;
+  const isMobile = window.matchMedia('(max-width: 900px)').matches;
   if (isMobile) {
     const pre = (contact.id === 'email') ? 'mailto' : 'tel';
     return window.location.href = `${pre}:${value}`;
