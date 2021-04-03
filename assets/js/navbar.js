@@ -53,14 +53,14 @@ function handleCopyEvent (e) {
 
   const resetChange = () => {
     document.removeEventListener('copy', copyHandler)
-    // contact.textContent = original;
+    contact.textContent = original;
     contact.classList.remove('success')
     contact.removeAttribute('disabled')
   };
 
   document.addEventListener('copy', copyHandler)
   document.execCommand('copy')
-  // contact.textContent = 'Copied!';
+  contact.textContent = 'Copied!';
   contact.classList.add('success')
   contact.setAttribute('disabled', '') 
   setTimeout(resetChange, 1200)

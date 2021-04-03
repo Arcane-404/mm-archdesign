@@ -5,12 +5,12 @@
 /* main { border: 3px solid slategray; } */
 /* footer { border: 3px solid slategray; } */
 /* footer * { border: 1px solid dimgray; } */
-/* .page-layout { border: 3px solid slategray; } */
+.page-layout { border: 3px solid slategray; }
 /* header .page-layout { border: 3px solid slategray; } */
 /* main .page-layout { border: 3px solid slategray; } */
 /* footer .page-layout { border: 3px solid slategray; } */
 /*  */
-/* #portfolio { border: 1px solid gray; } */
+#portfolio { border: 1px solid gray; }
 /* #about { border: 1px solid gray; } */
 /* #press { border: 1px solid gray; } */
 /*  */
@@ -27,19 +27,18 @@
 /* .card-primary { border: 1px solid red; } */
 /* .card-secondary { border: 1px solid red; } */
 /*  */
-/* .about-content { border: 1px solid gray; } */
+/* .about-content { border: 2px solid red; } */
 /*  */
 /* .portfolio-press { border: 2px solid red; } */
 /* .card-press { border: 1px solid red; } */
 /*  */
 /*  */
+.project-content { border: 2px solid red; }
+.project-content * { border: 1px solid gray; }
+.carousel-slide { border: 2px solid green; }
+.slide-indicator { border: 1px solid blue; }
+/*  */
 /* .press-content { border: 2px solid red; } */
 /* .press-content > * { border: 1px solid gray; } */
 /* .press-image img { border: 1px solid green; } */
 /*  */
-/* .project { border: 1px solid gray; } */
-/* .project * { border: 1px solid lightcoral; } */
-/* .carousel-slide { border: 2px solid green; } */
-/* .item { border: 1px solid blue; } */
-/*  */
-

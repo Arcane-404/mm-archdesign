@@ -1,29 +1,91 @@
-.project-content {
-  width: 100%;
-  height: 100%;
-}
+/* .project-content {} */
+/* .carousel-slides {} */
 
-.carousel-slide {
-  /* max-width: 500px; */
-  /* height: 100%; */
-  /* display: flex; */
-  /* overflow: auto; */
-  /* overflow: auto; */
-  /* display: none; */
-}
+.item:nth-child(1) { background: red; }
+.item:nth-child(2) { background: blue; }
+.item:nth-child(3) { background: green; }
+.item:nth-child(4) { background: gold; }
 
-.c-item:nth-child(1) { background: red; }
-.c-item:nth-child(1) { background: blue; }
-.c-item:nth-child(1) { background: green; }
-
-.item {
-  /* overflow: hidden; */
-  width: 350px;
-  height: 250px;
-}
+/* .item {} */
 
 .carousel-slide img {
   width: 350px;
   height: 100%;
   object-fit: cover;
 }
+
+/*  */
+
+/*  */
+/* slick-initialized  */
+.slick-slider {
+  /* max-width: 10%; */
+}
+/* .draggable */
+.slick-list {
+  /* max-width: 50%; */
+}
+/* .slick-track */
+/* .slick-slide */
+/* .slick-cloned */
+
+/* .slick-arrow */
+/* .slick-prev */
+/* .slick-next */
+/*  */
+
+/* body.project .project-content * { */
+  /* max-width: 100px !important; */
+/* } */
+
+.project-content {
+  /* grid-template: repeat(4, 1fr) / repeat(4, 1fr); */
+  /* --row: minmax(884px,1fr);  */
+  /* h: 644px */
+  /* --column: minmax(200px,1fr);  */
+  /* h: 149px */
+  /* --row: 505px; */
+  /* --column: minmax(auto,884px) minmax(200px,1fr); */
+  /* grid-template: var(--row) / var(--column); */
+  /* grid-auto-flow: column; */
+}
+
+/*  */
+
+/* .carousel-slide { */
+  /* position: relative; */
+/* } */
+/* .item { */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+/* } */
+/* .item * { margin: auto; } */
+/* .slide-options { */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+/* } */
+/* .slide-options button { */
+  /* height: 100%; */
+  /* padding: 0 20px; */
+  /* cursor: pointer; */
+/* } */
+/* .prev-btn */
+/* .next-btn */
+/* .slide-indicator { */
+  /* display: flex; */
+  /* flex-flow: column; */
+/* } */
+/* .indicator { */
+  /* flex: 1 1 auto; */
+/* } */
+/* .indicator:not(:last-child) { */
+  /* margin-bottom: 1.5em; */
+/* } */
