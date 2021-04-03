@@ -5,12 +5,14 @@
 /* main { border: 3px solid slategray; } */
 /* footer { border: 3px solid slategray; } */
 /* footer * { border: 1px solid dimgray; } */
-.page-layout { border: 3px solid slategray; }
+/* .page-layout { border: 3px solid slategray; } */
 /* header .page-layout { border: 3px solid slategray; } */
 /* main .page-layout { border: 3px solid slategray; } */
 /* footer .page-layout { border: 3px solid slategray; } */
 /*  */
-#portfolio { border: 1px solid gray; }
+
+/*  */
+/* #portfolio { border: 1px solid gray; } */
 /* #about { border: 1px solid gray; } */
 /* #press { border: 1px solid gray; } */
 /*  */
@@ -32,7 +34,9 @@
 /* .portfolio-press { border: 2px solid red; } */
 /* .card-press { border: 1px solid red; } */
 /*  */
+
 /*  */
+body.project-page #portfolio { border: 1px solid gray; }
 .project-content { border: 2px solid red; }
 .project-content * { border: 1px solid gray; }
 .carousel-slide { border: 2px solid green; }
