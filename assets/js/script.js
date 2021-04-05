@@ -1,3 +1,11 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const { pathname } = window.location
+  if (pathname === '/index.html') {
+    const path = pathname.replace(/(index)|\.html$/g, '')
+    window.history.replaceState(null, null, path)
+  }
+})
+
 const $ = (elm) => document.querySelector(elm);
 const $$ = (elm) => document.querySelectorAll(elm);
 const print = console.log;

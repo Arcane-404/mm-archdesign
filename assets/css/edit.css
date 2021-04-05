@@ -1,0 +1,142 @@
+:root {
+  --carousel-width: 884px;
+  --carousel-height: 505px;
+}
+
+.owl-carousel,
+.indicator
+{
+  /* border-radius: var(--radius); */
+  /* box-shadow: var(--shadow-active); */
+}
+
+.mobile-item 
+{ display: none; }
+
+.project-content {
+  display: flex;
+  height: var(--carousel-height);
+}
+
+/*  */
+
+/* .owl-carousel { flex: 2; } */
+/* .slide-indicators { flex: 1 2; } */
+
+.slide-indicators {
+  overflow-x: auto;
+}
+.indicator {
+  min-width: 200px;
+  height: 149px;
+  display: block;
+}
+.indicator img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.indicator:not(:last-child) {
+  margin-bottom: var(--spacing);
+}
+/* .slide-indicators */
+.slide-indicators::-webkit-scrollbar {
+  width: 0.15em;
+} 
+.slide-indicators::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+
+/*  */
+
+.owl-stage-outer { z-index: 2; }
+.owl-nav button { z-index: 2; }
+
+.owl-carousel {
+  position: relative;
+  width: 100%;
+  max-width: var(--carousel-width);
+  margin-right: var(--spacing);
+}
+.owl-stage-outer 
+{ height: 100%; }
+.owl-stage 
+{ height: 100%; }
+.owl-item 
+{ height: 100%; }
+.desktop-item 
+{ height: 100%; }
+.desktop-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*  */
+
+.owl-nav {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-top: 0 !important;
+}
+.owl-nav button {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  margin: 0 !important;
+  transition: background 0.3s ease !important;
+  outline: none;
+}
+.owl-nav button:hover {
+  background: rgba(0, 0, 0, 0.15) !important;
+}
+.owl-nav button:active {
+  background: rgba(0, 0, 0, 0.25) !important;
+}
+.owl-nav .owl-prev {
+  border-radius: var(--radius) 0 0 var(--radius) !important;
+  left: 0;
+}
+.owl-nav .owl-next {
+  border-radius: 0  var(--radius) var(--radius) 0 !important;
+  right: 0;
+}
+.owl-nav img {
+  padding: 20px !important;
+}
+
+/*  */
+
+@media (max-width: 1440px) {
+  :root {
+    --sides: 1em;
+  }
+  .project-content {
+    width: 90%;
+    max-width: 650px;
+    /* height: auto; */
+    /* flex-flow: column; */
+  }
+  .owl-carousel
+  { margin-right: initial; }
+  .slide-indicators 
+  { display: none; }
+}
+
+@media (max-width: 900px) {
+  .mobile-item
+  { display: block; }
+  .mobile-item:not(:last-child) { 
+    margin-bottom: 0.25em;
+  }
+  .mobile-item img
+  { width: 100%; }
+  .owl-carousel
+  { display: none !important; }
+  .slide-indicators 
+  { display: none; }
+}
