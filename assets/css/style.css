@@ -226,17 +226,23 @@ body {
 
 /* --- content --- */
 
-.content 
-{ height: 100%; }
+/* main */
+/* { width: 100%; } */
+.content { 
+  width: 100%;
+  /* height: 100%;  */
+}
+/* { height: 100vh; } */
 .content > .page-layout {
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   flex-flow: column;
 }
 .grid-content { 
   display: grid;
   gap: 1.5em;
-  margin-bottom: 1em; 
+  /* margin-bottom: 1em;  */
+  /* align-content: center; */
 }
 
 /* --- navbar --- */
@@ -447,38 +453,31 @@ body {
   grid-template: repeat(2, var(--row)) / repeat(2, 1fr); 
   grid-auto-rows: var(--row);
 }
-.portfolio-press .card-title {
-  min-height: 89px;
-}
+.portfolio-press .card-title 
+{ min-height: 89px; }
 .portfolio-press .date { display: none; }
 
 /*  --- Press Article --- */
 
-.press-image {
-  /* border-radius: var(--radius); */
-  /* overflow: hidden; */
-  max-width: 317px;
-}
+.press-image 
+{ max-width: 317px; }
 .press-image img {
-  border-radius: var(--radius);
+  /* border-radius: var(--radius); */
   width: 100%;
-  /* max-height: 365px; */
   object-fit: contain;
-  /* object-position: left; */
-  box-shadow: var(--shadow-active);
+  /* box-shadow: var(--shadow-active); */
 }
 .press-description span 
 { display: block; }
-.press-date 
-{ display: none; }
+.press-date { display: none; }
 
 
 /* =================
 ** Media Query
 ================= */
 
-@media (min-width: 600px) {
-  /* --- about me --- */
+@media (min-width: 630px) {
+  /* --- about --- */
 
   .about-content {
     display: flex;
@@ -511,9 +510,8 @@ body {
     top: 0;
     left: 0;
   }
-  .navbar-logo img {
-    width: 100%;
-  }
+  .navbar-logo img 
+  { width: 100%; }
   .navbar-caret
   { display: none; }
 
@@ -533,7 +531,7 @@ body {
   .card-overlay p 
   { margin: auto; }
 
-  /* --- content --- */
+  /* --- Content --- */
 
   body 
   { display: flex; }
@@ -541,33 +539,26 @@ body {
   .page-logo, 
   .line
   { display: none; }
-  main
-  { width: 100%; }
   .page-title
   { margin-top: 1.625em; }
 
-  /* --- portfolio --- */
+  /* --- Portfolio --- */
 
-  .portfolio-projects { 
-    /* --row: minmax(275px, 1fr); */
-    /* --row: minmax(auto,275px); */
-    /* --row: 270px; */
-    --row: 245px;
+  .portfolio-projects {
+    --row: minmax(245px, auto);
     --column: minmax(auto,752px) minmax(auto,324px);
     grid-template: var(--row) / var(--column);
     grid-auto-rows: var(--row);
     grid-auto-flow: column;
     flex: 1 1 auto;
+    margin-bottom: 1.5em;
   } 
-  .portfolio-projects .card-title {
-    display: none;
-  }
-  .card-primary { 
-    grid-row: auto / span 2; 
-    /* grid-column: 1 / -1; */
-  }
+  .portfolio-projects .card-title 
+  { display: none; }
+  .card-primary 
+  { grid-row: auto / span 2; }
 
-  /* --- about --- */
+  /* --- About --- */
 
   body.about {
     --image: url('../images/screenshots/profile-background-desktop.png');
@@ -578,14 +569,21 @@ body {
   }
 
   #about {
-    --gradient: linear-gradient(179.98deg, rgba(0, 0, 0, 0) 2.14%, rgba(0, 0, 0, 0.379675) 53.27%, rgba(0, 0, 0, 0.4) 61.73%, rgba(0, 0, 0, 0.379777) 72.16%, rgba(0, 0, 0, 0.38) 80.33%, rgba(0, 0, 0, 0.335936) 85.67%, rgba(0, 0, 0, 0.28813) 91.47%, rgba(0, 0, 0, 0.24864) 96.26%, rgba(0, 0, 0, 0.198758) 102.31%, rgba(0, 0, 0, 0.163425) 106.59%, rgba(0, 0, 0, 0.12) 111.86%);
-    /* --image: url('../images/screenshots/profile-background-desktop.png'); */
+    --gradient: linear-gradient(
+      179.98deg, 
+      rgba(0, 0, 0, 0) 2.14%, 
+      rgba(0, 0, 0, 0.379675) 53.27%,
+      rgba(0, 0, 0, 0.4) 61.73%,
+      rgba(0, 0, 0, 0.379777) 72.16%, 
+      rgba(0, 0, 0, 0.38) 80.33%, 
+      rgba(0, 0, 0, 0.335936) 85.67%, 
+      rgba(0, 0, 0, 0.28813) 91.47%, 
+      rgba(0, 0, 0, 0.24864) 96.26%, 
+      rgba(0, 0, 0, 0.198758) 102.31%, 
+      rgba(0, 0, 0, 0.163425) 106.59%, 
+      rgba(0, 0, 0, 0.12) 111.86%
+    );
     background-image: var(--gradient);
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-    background-blend-mode: multiply;
-    /* height: 100vh; */
   }
   #about .page-layout {
     display: flex;
@@ -594,11 +592,9 @@ body {
 
   .about-content {
     flex: 1 1 auto;
-    margin-top: -9em;
     padding-left: initial;
     display: flex;
     flex-flow: wrap;
-    align-items: center;
   }
   .about-image {
     order: 1;
@@ -612,24 +608,31 @@ body {
     order: 2;
     max-width: 46ch;
   } 
-
-  /* --- press --- */
-
-  .portfolio-press {
-    /* --row: minmax(305px,1fr); */
-    /* --row: 270px; */
-    --row: 245px;
-    --column: repeat(auto-fill, minmax(306px,1fr));
-    grid-template: var(--row) / var(--column);
-    grid-auto-rows: var(--row);
-  }  
-  .portfolio-press .card-title {
-    min-height: 99px;
-  }
 }
 
 @media (min-width: 1080px) {
-  /* --- press article --- */
+  /* --- About --- */
+
+  .about-content {
+    margin-top: -9em;
+    align-items: center;
+  }
+
+  /* --- Press --- */
+
+  .portfolio-press {
+    /* --row: 245px; */
+    --row: minmax(auto,260px);
+    --column: repeat(auto-fill, minmax(306px,1fr));
+    grid-template: var(--row) / var(--column);
+    grid-auto-rows: var(--row);
+    flex: 1 1 auto;
+    margin-bottom: 1.5em;
+  }
+  .portfolio-press .card-title 
+  { min-height: 99px; }
+
+  /* --- Press Article --- */
 
   .press-content 
   { display: flex; }
@@ -643,3 +646,6 @@ body {
     /* margin-top: 4.5em; */
   }
 }
+
+/* .portfolio-press .date { display: block !important; } */
+/* .press-date { display: block !important; } */

@@ -13,7 +13,6 @@ $('.owl-carousel').owlCarousel({
   dots: false,
   nav:true,
   navText : [prevBtn,nextBtn],
-  // margin:10,
   URLhashListener:true,
   startPosition: 'URLHash',
   responsive:{
@@ -25,16 +24,3 @@ $('.owl-carousel').owlCarousel({
     1000:{ items:1 }
   }
 })
-
-// $(window).trigger('resize')
-
-/*  
-.owl-carousel
-  .owl-stage-outer
-    .owl-stage
-  .owl-nav
-    .owl-prev > img
-    .owl-next > img
-  .owl-dots
-    .owl-dot > span
-*/
