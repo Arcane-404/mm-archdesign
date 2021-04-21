@@ -459,6 +459,9 @@ body {
 
 /*  --- Press Article --- */
 
+.press-content {
+  height: 79vh;
+}
 .press-image 
 { max-width: 317px; }
 .press-image img {
@@ -471,6 +474,14 @@ body {
 { display: block; }
 .press-date { display: none; }
 
+.press-pdf {
+  width: 100%;
+  height: 100%;
+  /* height: 318vh; */
+}
+.press-pdf a {
+  text-decoration: underline;
+}
 
 /* =================
 ** Media Query
@@ -634,8 +645,8 @@ body {
 
   /* --- Press Article --- */
 
-  .press-content 
-  { display: flex; }
+  /* .press-content  */
+  /* { display: flex; } */
   .press-image {
     min-width: 25%;
     max-width: 445px;
