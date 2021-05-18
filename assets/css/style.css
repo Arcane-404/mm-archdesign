@@ -589,7 +589,7 @@ body {
   /* --- About --- */
 
   body.about {
-    --image: url('../images/screenshots/profile-background-desktop.png');
+    --image: url('../images/portfolio-shots/profile-background-desktop.png');
     background-image: var(--image);
     background-repeat: no-repeat;
     background-size: cover;
