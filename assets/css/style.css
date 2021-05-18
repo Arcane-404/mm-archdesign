@@ -142,6 +142,14 @@ body {
   letter-spacing: 0.005em;
 }
 
+/* --- portfolio page --- */
+
+.photography-credit {
+  /* font-size: 0.875rem; */
+  font: var(--body);
+  text-align: center;
+}
+
 /* --- press article --- */
 
 .press-title {
@@ -425,7 +433,6 @@ body {
 
 /* --- Project Page --- */
 
-
 /* =================
 ** About
 ================= */
@@ -644,6 +651,13 @@ body {
   .about-content {
     margin-top: -9em;
     align-items: center;
+  }
+
+  /* --- portfolio page --- */
+
+  .photography-credit {
+    position: fixed;
+    bottom: -1.25%;
   }
 
   /* --- Press --- */
