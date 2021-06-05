@@ -440,8 +440,8 @@ body {
 .about-image {
   --adjust: calc(var(--sides) * -1);
   border-radius: var(--radius) 0 0 var(--radius);
-  width: 100%;
-  max-width: 85%;
+  width: 85%;
+  max-width: 300px;
   margin-left: auto;
   margin-right: var(--adjust);
   margin-bottom: 1.55em;
@@ -520,7 +520,8 @@ body {
   }
   .about-image {
     order: 2;
-    max-width: 300px;
+    width: 100%;
+    /* max-width: 300px; */
     margin-left: 1.85em;
   }
   .about-copy 
@@ -596,7 +597,7 @@ body {
   /* --- About --- */
 
   body.about {
-    --image: url('../images/portfolio-shots/profile-background-desktop.png');
+    --image: url('../images/profile-shots/profile-background-1.png');
     background-image: var(--image);
     background-repeat: no-repeat;
     background-size: cover;
@@ -630,17 +631,19 @@ body {
     padding-left: initial;
     display: flex;
     flex-flow: wrap;
+    /* align-items: center; */
   }
   .about-image {
     order: 1;
     border-radius: var(--radius);
     width: 55%;
-    max-width: 416px;
     margin: 0;
     margin-right: 2.75em;
+    align-self: flex-start;
   }
   .about-copy {
     order: 2;
+    width: 55%;
     max-width: 46ch;
   } 
 }
@@ -651,6 +654,10 @@ body {
   .about-content {
     margin-top: -9em;
     align-items: center;
+  }
+  .about-image {
+    align-self: initial;
+    /* max-width: 416px; */
   }
 
   /* --- portfolio page --- */
