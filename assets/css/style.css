@@ -597,11 +597,16 @@ body {
   /* --- About --- */
 
   body.about {
+    --bg-size: cover;
     --image: url('../images/profile-shots/profile-background-1-min.png');
     background-image: var(--image);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: var(--bg-size);
+    -o-background-size: var(--bg-size);
+    -ms-background-size: var(--bg-size);
+    -moz-background-size: var(--bg-size);
+    -webkit-background-size: var(--bg-size);
   }
 
   #about {
