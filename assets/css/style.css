@@ -597,7 +597,7 @@ body {
   /* --- About --- */
 
   body.about {
-    --image: url('../images/profile-shots/profile-background-1.png');
+    --image: url('../images/profile-shots/profile-background-1.webp');
     background-image: var(--image);
     background-repeat: no-repeat;
     background-size: cover;
